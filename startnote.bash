@@ -2,8 +2,9 @@
 #
 # Author: Jay P.
 # Date: 2026-10-24
-
-source timestamps.bash
+#
+readonly SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
+source "$SCRIPT_DIR/timestamps.bash"
 
 # Make a string friendly to filenames and URLs.
 slugify() {
